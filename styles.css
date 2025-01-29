@@ -7,90 +7,78 @@
 
 /* Body */
 body {
-  font-family: 'Lato', sans-serif;
-  color: #EAEAEA;
-  background-color: #1E1E1E;
+  font-family: "Lato", sans-serif;
+  color: #eaeaea;
+  background-color: #1e1e1e;
 }
 
 /* Main Layout */
 .main-container {
   display: flex;
-  flex-direction: row; /* Display the Overview and Main content side by side */
-  gap: 20px; /* Optional: Adjust the gap between sections */
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Floating Section Styles */
+section {
+  padding: 60px 20px;
+  background-color: #222222;
+  color: #eaeaea;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-5px);
 }
 
 /* Overview Section */
 #overview {
   background-color: #222222;
-  color: #EAEAEA;
+  color: #eaeaea;
   padding: 40px 20px;
-  flex: 1 0 300px; /* Allows the overview to be flexible with a minimum width of 300px */
-  max-width: 300px; /* Optional: Set a max width for the sidebar */
+  flex: 1 0 300px;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #overview .container {
   display: flex;
-  flex-direction: column; /* Stack content vertically within the sidebar */
-  align-items: center; /* Center content */
+  flex-direction: column;
+  align-items: center;
 }
 
-.overview-content {
-  display: flex;
-  flex-direction: column; /* Stack the profile image and details vertically */
-  align-items: center; /* Center the content in the sidebar */
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
 }
-
-/* Profile Image */
-.profile-image img {
-  width: 100%;          /* Makes the image responsive */
-  height: auto;         /* Maintain aspect ratio */
-  border-radius: 10px;  /* Optional: Keeps the rounded corners */
-  object-fit: cover;    /* Ensures the image covers the space without distortion */
-  margin-bottom: 20px;
-}
-
-.main-content {
-  flex: 1; /* Main content takes the remaining space */
-}
-
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #333333, #1E1E1E);
-  color: #EAEAEA;
+  background: linear-gradient(135deg, #444, #1e1e1e);
+  color: #eaeaea;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 #hero h2 {
-  font-family: 'Merriweather', serif;
-  font-size: 36px;
-  font-weight: 600;
+  font-family: "Merriweather", serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 #hero p {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-/* Section Styles */
-section {
-  padding: 60px 20px;
-  background-color: #222222;
-  color: #EAEAEA;
-}
-
-section h2 {
-  font-family: 'Merriweather', serif;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #B0B0B0;
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: 400;
+  color: #cccccc;
 }
 
 /* Container */
@@ -100,9 +88,9 @@ section p {
   width: 100%;
 }
 
-/* Contact Button (LinkedIn) */
+/* Contact Button */
 .cta-button {
-  background-color: #0077B5;
+  background-color: #0077b5;
   color: white;
   padding: 12px 30px;
   text-decoration: none;
@@ -115,7 +103,7 @@ section p {
 }
 
 .cta-button:hover {
-  background-color: #005C8B;
+  background-color: #005c8b;
 }
 
 /* Footer */
@@ -130,37 +118,4 @@ footer {
 footer p {
   font-size: 14px;
   color: #888;
-}
-
-/* Media Query for Narrow Screens (Mobile) */
-@media (max-width: 768px) {
-  /* Overview Section as Header on Mobile */
-  #overview .container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
-
-  .profile-image {
-      margin-bottom: 20px;
-  }
-
-  .overview-details p {
-      font-size: 16px;
-  }
-}
-
-/* Talks & Classes Section */
-#talks {
-  background-color: #222222;
-  color: #EAEAEA;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#talks h2 {
-  font-size: 28px;
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
-  margin-bottom: 20px;
 }
