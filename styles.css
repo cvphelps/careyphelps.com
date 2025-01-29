@@ -149,3 +149,18 @@ footer p {
       font-size: 16px;
   }
 }
+
+/* Talks & Classes Section */
+#talks {
+  background-color: #222222;
+  color: #EAEAEA;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#talks h2 {
+  font-size: 28px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
