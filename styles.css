@@ -40,9 +40,13 @@ body {
   align-items: center; /* Center the content in the sidebar */
 }
 
-.profile-image {
-  flex: 0 0 120px;
-  margin-bottom: 20px; /* Adjusted margin */
+/* Profile Image */
+.profile-image img {
+  width: 100%;          /* Makes the image responsive */
+  height: auto;         /* Maintain aspect ratio */
+  border-radius: 10px;  /* Optional: Keeps the rounded corners */
+  object-fit: cover;    /* Ensures the image covers the space without distortion */
+  margin-bottom: 20px;
 }
 
 .main-content {
