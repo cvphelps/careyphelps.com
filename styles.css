@@ -52,42 +52,43 @@ nav .nav-links a:hover {
   color: #FFB946;
 }
 
+/* Main Layout */
+.main-container {
+  display: flex;
+  flex-direction: row; /* Display the Overview and Main content side by side */
+  gap: 20px; /* Optional: Adjust the gap between sections */
+}
+
 /* Overview Section */
 #overview {
   background-color: #222222;
   color: #EAEAEA;
   padding: 40px 20px;
+  flex: 1 0 300px; /* Allows the overview to be flexible with a minimum width of 300px */
+  max-width: 300px; /* Optional: Set a max width for the sidebar */
 }
 
 #overview .container {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-direction: column; /* Stack content vertically within the sidebar */
+  align-items: center; /* Center content */
 }
 
 .overview-content {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-direction: column; /* Stack the profile image and details vertically */
+  align-items: center; /* Center the content in the sidebar */
 }
 
 .profile-image {
   flex: 0 0 120px;
-  margin-right: 30px;
+  margin-bottom: 20px; /* Adjusted margin */
 }
 
-.profile-image img {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  object-fit: cover;
+.main-content {
+  flex: 1; /* Main content takes the remaining space */
 }
 
-.overview-details p {
-  font-size: 18px;
-  margin: 10px 0;
-}
 
 /* Hero Section */
 #hero {
