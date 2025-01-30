@@ -1,7 +1,7 @@
 /* Body */
 body {
   font-family: "Roboto", sans-serif;
-  color: #eaeaea;
+  color: #d0d0e0;
   background-color: #1c1c1f;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@ body {
 /* Main Page Container */
 #full-page {
   display: flex;
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 /* Overview Section Sidebar */
@@ -39,7 +39,7 @@ section {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* Hero Section */
@@ -60,12 +60,26 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 18px;
 }
 
 p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* Talks & Classes Section */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  border: 10px solid #1c1c1f;
+  border-radius: 40px;
+  margin: 10px;
 }
 
 /* Contact Button */
@@ -76,7 +90,7 @@ p {
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
-  margin-top: 20px;
+  margin: 20px 0px;
   display: inline-block;
   text-align: center;
   transition: background-color 0.3s ease;
