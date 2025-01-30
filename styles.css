@@ -3,14 +3,27 @@ body {
   font-family: "Lato", sans-serif;
   color: #eaeaea;
   background-color: #1c1c1e;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 /* Main Page Container */
-#main-container {
+#full-page {
   display: flex;
-  max-width: 800px;
-  margin: 0 auto;
-  height: 100vh;
+  max-width: 1200px;
+}
+
+/* Overview Section Sidebar */
+#sidebar {
+  position: fixed;
+  width: 200px; /* Sidebar width */
+  height: 100vh; /* Full height of the viewport */
+}
+
+#main-content {
+  margin-left: 240px; /* Same as the sidebar width */
+  padding: 20px;
 }
 
 /* Floating Section */
@@ -19,18 +32,6 @@ section {
   background-color: #222225;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Overview Section Sidebar */
-#overview {
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 250px;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  flex-shrink: 0;
-  margin-right: 20px;
 }
 
 .profile-image {
