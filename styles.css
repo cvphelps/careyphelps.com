@@ -1,8 +1,8 @@
 /* Body */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #eaeaea;
-  background-color: #1c1c1e;
+  background-color: #1c1c1f;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -11,27 +11,28 @@ body {
 /* Main Page Container */
 #full-page {
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 /* Overview Section Sidebar */
 #sidebar {
   position: fixed;
-  width: 200px; /* Sidebar width */
+  width: 260px; /* Sidebar width */
   height: 100vh; /* Full height of the viewport */
 }
 
 #main-content {
-  margin-left: 240px; /* Same as the sidebar width */
+  margin-left: 300px; /* Same as the sidebar width */
   padding: 20px;
 }
 
 /* Floating Section */
 section {
   padding: 20px;
-  background-color: #222225;
+  background-color: #222228;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
 }
 
 .profile-image {
@@ -43,19 +44,23 @@ section {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #444449, #1c1c1e);
-  color: #eaeaea;
+  background: linear-gradient(135deg, #444450, #1c1c1f);
   text-align: center;
-  padding: 80px 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-  font-family: "Merriweather", serif;
-  font-size: 48px;
+  text-transform: uppercase;
+  font-family: "Lexend Giga", serif;
+  font-size: 44px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 p {
