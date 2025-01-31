@@ -15,14 +15,20 @@ body {
 }
 
 /* Overview Section Sidebar */
-#sidebar {
+#overview {
   position: fixed;
-  width: 260px; /* Sidebar width */
+  width: 200px; /* Sidebar width */
   height: 100vh; /* Full height of the viewport */
 }
 
+#overview-details svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
 #main-content {
-  margin-left: 300px; /* Same as the sidebar width */
+  margin-left: 240px; /* Same as the sidebar width */
   padding: 20px;
 }
 
@@ -32,19 +38,19 @@ section {
   background-color: #222228;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px 0px;
+  margin-bottom: 20px;
 }
 
 .profile-image {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #444450, #1c1c1f);
   text-align: center;
   padding: 30px 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);

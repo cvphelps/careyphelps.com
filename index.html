@@ -10,21 +10,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
   </head>
   <body>
-    <!-- Main Content and Sidebar Layout -->
     <div id="full-page">
-      <!-- Overview Section as Sidebar -->
-      <section id="sidebar">
+      <!-- Overview -->
+      <section id="overview">
         <img
           class="profile-image"
           src="assets/carey_phelps_headshot.jpg"
           alt="Carey Phelps"
         />
         <div id="overview-details">
-          <p><strong>Education:</strong> Stanford University</p>
-          <p><strong>Role:</strong> W&B Founding PM</p>
-          <p><strong>Location:</strong> San Francisco</p>
+          <p><i data-lucide="graduation-cap"></i> Stanford University</p>
+          <p><i data-lucide="building-2"></i> Weights & Biases</p>
+          <p><i data-lucide="briefcase"></i> Founding PM</p>
+          <p><i data-lucide="map-pin"></i> San Francisco</p>
         </div>
       </section>
 
@@ -111,5 +113,8 @@
         </section>
       </div>
     </div>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
